@@ -749,9 +749,9 @@ var pJS = function(tag_id, params){
 
 
   /* ---------- pJS functions - modes events ------------ */
-
+var count= 0;
   pJS.fn.modes.pushParticles = function(nb, pos){
-
+  if(count<50){count++;
     pJS.tmp.pushing = true;
 
     for(var i = 0; i < nb; i++){
@@ -772,7 +772,7 @@ var pJS = function(tag_id, params){
         pJS.tmp.pushing = false;
       }
     }
-
+  }
   };
 
 
