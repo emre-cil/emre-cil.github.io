@@ -13,9 +13,9 @@ var pJS = function(tag_id, params){
   var dd=200
   
   if(screen.width < 480 || screen.height < 480){
-    aa = 50
+    aa = 100
    ss=2;
-   dd=75;
+   dd=100;
   }
 
   var canvas_el = document.querySelector('#'+tag_id+' > .particles-js-canvas-el');
