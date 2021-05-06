@@ -13,7 +13,7 @@ var pJS = function(tag_id, params){
   var dd=200
   
   if(screen.width < 480 || screen.height < 480){
-    aa = 100
+    aa = 200
    ss=2;
    dd=100;
   }
