@@ -1,0 +1,125 @@
+body {
+  font-family: "Open sans", sans-serif;
+  background-color: #040404;
+  color: #fff;
+  position: relative;
+  background: transparent;
+}
+body::before {
+  content: "";
+  position: fixed;
+  background: #040404 url("/images/bg.jpg") top right no-repeat;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-size: cover;
+  height: 100vh;
+  z-index: -1;
+}
+@media (min-width: 1024px) {
+  body::before {
+    background-attachment: fixed;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "", sans-serif;
+}
+
+#header {
+  transition: ease-in-out 0.3s;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  z-index: 997;
+  overflow-y: auto;
+}
+#header * {
+  transition: ease-in-out 0.3s;
+}
+#header h1 {
+  font-size: 52px;
+  font-family: "", sans-serif;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+  line-height: 1rem;
+}
+#header h1 a,
+#header h1 a:hover {
+  color: white;
+  line-height: 1;
+  display: inline-block;
+}
+#header h2 {
+  font-size: 25px;
+  margin-top: 18px;
+  color: rgba(255, 255, 255, 0.7);
+}
+#header h2 span {
+  color: white;
+  padding-bottom: 5px;
+  border-bottom: 2px solid #16ca6a;
+}
+#header h2 span:hover {
+  border-bottom: 2px solid #f02092ec;
+}
+#header .social {
+  margin-top: 42px;
+  display: flex;
+}
+#header .social a {
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.09);
+  color: white;
+  line-height: 1rem;
+  margin-right: 9px;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+}
+#header .social a:hover {
+  background: #16ca6a;
+}
+@media (max-width: 984px) {
+  #header h1 {
+    font-size: 40px;
+  }
+  #header h2 {
+    font-size: 18px;
+    line-height: 12px;
+  }
+  #header .social {
+    margin-top: 25px;
+  }
+  #header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+#navbarTogglerDemo03 ul li a span:hover {
+  border-bottom: 2px solid #f02092ec;
+  transition: ease-in-out 0.1s;
+
+  padding-bottom: 3px;
+}
+
+#navbarTogglerDemo03 ul li .active span {
+  border-bottom: 2px solid #16ca6a;
+  padding-bottom: 3px;
+}
